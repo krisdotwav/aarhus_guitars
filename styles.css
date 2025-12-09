@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
 body {
     background-color: #F6F4F1;
 }
@@ -23,9 +28,17 @@ header {
     backdrop-filter: blur(10px);
 }
 
+.nav-box {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
 nav {
     display: flex;
+    justify-content: center;
     gap: 60px;
+    padding: 0px 60px;
 }
 
 .socials-box {
@@ -35,6 +48,29 @@ nav {
 
 .socials-box svg:hover{
     opacity: 0.8;
+}
+
+.contact-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(30, 30, 30, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px #ffffff40 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    backdrop-filter: blur(20px);
+    transition: 100ms;
+}
+
+.contact-btn:hover {
+    background-color: rgba(100, 100, 100, 0.3);
 }
 
 footer {
