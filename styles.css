@@ -5,7 +5,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
     overflow-y: scroll;
 }
 
@@ -100,7 +99,7 @@ footer p {
 
 .footer-box {
     display: flex;
-    width: 400px;
+    width: fit-content;
     flex-direction: column;
     align-items: center;
     gap: 25px;
@@ -140,4 +139,24 @@ footer p {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    header .socials-box {
+        display: none;
+    }
+
+    footer {
+        height: fit-content;
+        padding: 40px 0px 20px 0px;
+        gap: 60px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 60px;
+    }
 }
