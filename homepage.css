@@ -48,7 +48,6 @@
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
-    
 }
 
 .glass {
@@ -152,10 +151,6 @@ section {
 @media (max-width: 768px) {
     .hero-text {
         gap: 20px;
-    }
-    .hero-buttons {
-        flex-direction: column;
-        gap: 10px;
     }
     .hero-text-mob {
         display: block;

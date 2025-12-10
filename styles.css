@@ -10,6 +10,7 @@ html {
 
 body {
     background-color: #F6F4F1;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 header {
@@ -70,6 +71,26 @@ nav {
 
 .contact-btn:hover {
     background-color: rgba(100, 100, 100, 0.3);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    color: #1e1e1e;
+    border-radius: 10px;
+    z-index: 10;
+    backdrop-filter: blur(20px);
+}
+
+.contact-popup:hover {
+    .popup {
+        display: block;
+    }
 }
 
 footer {
