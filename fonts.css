@@ -14,11 +14,32 @@ h2 {
     color: #F6F4F1;
 }
 
+/* For Price Page Small Headings */
 h3 {
     font-family: 'Red Hat Display', serif;
     font-size: 1.5rem;
     color: #1e1e1e;
     margin-bottom: 20px;
+}
+
+/* For Price Page Titles */
+h4 {
+    color: #6875B8;
+    text-align: center;
+    font-family: "Safira March Personal Use Only";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* For Prices */
+h5 {
+    color: #6875B8;
+    font-family: "Anonymous Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
 }
 
 p {
