@@ -162,6 +162,30 @@ footer p {
     gap: 10px;
 }
 
+.hero-pic {
+    width: 100%;
+    margin-top: 89px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #F6F4F1;
+    font-size: 20pt;
+}
+
+.hero-text-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.hero-text-box img {
+    height: 80px;
+}
+
 @media (max-width: 768px) {
     header nav {
         display: none;
