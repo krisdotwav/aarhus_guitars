@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="kontakt.js" defer></script>
 </head>
 <body>
     <header>
@@ -72,7 +73,7 @@
     </header>
 
     <div class="contact-popup">
-        <button class="contact-btn">
+        <button id="show-popup" class="contact-btn">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M27.5 7.5C27.5 6.125 26.375 5 25 5H5C3.625 5 2.5 6.125 2.5 7.5V22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5ZM25 7.5L15 13.75L5 7.5H25ZM25 22.5H5V10L15 16.25L25 10V22.5Z" fill="#F6F4F1"/>
             </svg>
@@ -87,7 +88,30 @@
     </div>
 </div>
 
-        <footer>
+<div id="popup-form-container" style="display:none;">
+        <form id="contact-form" method="POST" action="sendmail.php">
+            <div class="form-row form-error" style="display:none;"></div>
+            <div class="form-row">
+                <label for="contact-form-name">Name:</label>
+                <input id="contact-form-name" class="form-input" type="text" name="name" required>
+            </div>
+            <div class="form-row">
+                <label for="contact-form-email">Email:</label>
+                <input id="contact-form-email" class="form-input" type="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="contact-form-phone">Phone:</label>
+                <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+            </div>
+            <div class="form-row">
+                <label for="contact-form-message">Message:</label>
+                <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+            </div>
+                <button type="submit">Submit</button>
+        </form>
+</div>
+
+    <footer>
         <div class="footer-content">
             <div class="footer-box">
                 <p style="font-weight: bold;">Åbningstider:</p>
