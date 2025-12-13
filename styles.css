@@ -188,11 +188,20 @@ footer p {
 
 
 .form-row {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
+    padding: auto;
+    color: #F6F4F1;
 }
 
 .form-input {
     display: block;
+    color: #0c0c0c;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .form-error {
@@ -201,11 +210,8 @@ footer p {
 
 #popup-form-container {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,12 +219,13 @@ footer p {
 }
 
 #popup-form-container form {
-    background-color: #ffffff;
+    background-color: #969696;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 32px;
     width: 80%;
     max-width: 500px;
     margin: 30px auto;
+    opacity: 0.80;
 }
 
 @media (max-width: 768px) {
