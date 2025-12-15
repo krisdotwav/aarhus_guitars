@@ -93,3 +93,28 @@
     flex-direction: column;
     gap: 10px;
 }
+
+@media (max-width: 768px) {
+    .prices-section {
+        width: 80%;
+        margin: 50px auto 20px auto;
+    }
+
+    .price-card, .other-price-card {
+        flex-direction: column;
+    }
+
+    .image-wrapper, .price-text-box, .other-price-text-box {
+        flex: none;
+        width: 100%;
+    }
+
+    .other-price-text-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .vertical-price-container, .other-vertical-price-container {
+        flex-direction: column;
+    }
+}
