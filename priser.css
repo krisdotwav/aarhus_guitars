@@ -1,6 +1,9 @@
 .prices-section {
     width: 60%;
     margin: 50px auto 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .vertical-price-container {
