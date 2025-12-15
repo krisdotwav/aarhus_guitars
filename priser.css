@@ -27,7 +27,7 @@
 .price-card {
     display: flex;
     align-items: stretch; /* makes both columns equal height */
-    gap: 20px;
+    gap: 30px;
     margin: 30px 0 30px 0;
 }
 
@@ -116,5 +116,9 @@
 
     .vertical-price-container, .other-vertical-price-container {
         flex-direction: column;
+    }
+
+    .image-wrapper{
+        display: none;
     }
 }
