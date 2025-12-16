@@ -192,43 +192,6 @@ footer p {
     height: 80px;
 }
 
-.hero2 {
-    width: 100%;
-    height: 900px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: #F6F4F1;
-    font-size: 20pt;
-}
-
-.hero2-text-box h2 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 40px;
-    color: #F6F4F1;
-    font-size: 26pt;
-    margin-bottom: 20px;
-}
-
-.hero2-text-box p {
-    text-align: justify;
-    width: 50%;
-    font-size: 12pt;
-    line-height: 1.6;
-    color: #F6F4F1;
-    max-width: 1200px;
-}
-
-.hero2-text-box img {
-    height: 80px;
-}
-
-
 .form-row {
     margin-bottom: 4px;
     padding: auto;

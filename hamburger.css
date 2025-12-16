@@ -3,7 +3,7 @@
     display: flex;
 }
 
-.off-screen-menu img, svg {
+.off-screen-menu img {
     height: 60px;
     color: #8C99D9;
 }
@@ -25,7 +25,7 @@
 
 .off-screen-menu a {
     text-decoration: none;
-    color: white;
+    color: #F6F4F1;
     font-size: 1.5rem;
 }
 

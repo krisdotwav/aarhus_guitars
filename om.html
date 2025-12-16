@@ -7,6 +7,8 @@
     <title>Om | Aarhus Guitars</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="om.css">
     <link rel="stylesheet" href="priser.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,24 +82,23 @@
         <div class="popup">Kontakt mig her!</div>
     </div>
 
-<div class="hero-pic" style="background-image: url(images/hero_pic.jpg);">
-    <div class="hero-text-box">
-        <img src="images/white_wire_logo.svg">
-        <h1>Om Aarhus Guitars</h1>
+    <div class="hero-pic" style="background-image: url(images/hero_pic.jpg);">
+        <div class="hero-text-box">
+            <img src="images/white_wire_logo.svg">
+            <h1>Om Aarhus Guitars</h1>
+        </div>
     </div>
-</div>
 
-<div class="hero2" style="background-image: url(images/Om_Hero.png);">
-    <div class="hero2-text-box">
-        <h2>Guitarreparatør med passion for instrumenter</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget. Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget.
-<br><br>
-            Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget. Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget. Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget.
-<br><br>
+    <div class="hero2" style="background-image: url(images/Om_Hero.png);">
+        <div class="hero2-text-box">
+            <h2>Guitarreparatør med passion for instrumenter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget. Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget.<br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget. Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget. Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget.<br>
+            <br>
             Lorem ipsum dolor sit amet consectetur. Id mauris ut mauris amet dolor diam turpis eu mi. At volutpat sagittis faucibus rutrum et placerat. Volutpat bibendum nulla nisl eget.</p>
+        </div>
     </div>
-
-</div>
 
 <div class="section-separator">
     <div class="team-section">
@@ -115,26 +116,26 @@
 </div>
 
 <div id="popup-form-container" style="display:none;">
-        <form id="contact-form" method="POST">
-            <div class="form-row form-error" style="display:none;"></div>
-            <div class="form-row">
-                <label for="contact-form-name">Navn:</label>
-                <input id="contact-form-name" class="form-input" type="text" name="name">
-            </div>
-            <div class="form-row">
-                <label for="contact-form-email">Email:</label>
-                <input id="contact-form-email" class="form-input" type="email" name="email">
-            </div>
-            <div class="form-row">
-                <label for="contact-form-phone">Tlf:</label>
-                <input id="contact-form-phone" class="form-input" type="tel" name="phone">
-            </div>
-            <div class="form-row">
-                <label for="contact-form-message">Skriv din besked her:</label>
-                <textarea id="contact-form-message" class="form-input" name="message"></textarea>
-            </div>
-                <button type="submit">Submit</button>
-        </form>
+    <form id="contact-form" method="POST">
+        <div class="form-row form-error" style="display:none;"></div>
+        <div class="form-row">
+            <label for="contact-form-name">Navn:</label>
+            <input id="contact-form-name" class="form-input" type="text" name="name">
+        </div>
+        <div class="form-row">
+            <label for="contact-form-email">Email:</label>
+            <input id="contact-form-email" class="form-input" type="email" name="email">
+        </div>
+        <div class="form-row">
+            <label for="contact-form-phone">Tlf:</label>
+            <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+        </div>
+        <div class="form-row">
+            <label for="contact-form-message">Skriv din besked her:</label>
+            <textarea id="contact-form-message" class="form-input" name="message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </div>
 
     <footer>
@@ -296,4 +297,5 @@
         <p style="font-size: 10pt;">2025 © Aarhus Guitars. All rights reserved.</p>
     </footer>
 </body>
+<script src="./hamburger.js"></script>
 </html>

@@ -30,18 +30,18 @@
 
 .price-card {
     display: flex;
-    align-items: stretch; /* makes both columns equal height */
+    align-items: stretch;
     gap: 30px;
     margin: 30px 0 30px 0;
 }
 
 .image-wrapper, .price-text-box {
-    flex: 1;       /* each takes up half the width */
-    min-width: 0;  /* prevents overflow */
+    flex: 1;
+    min-width: 0;
 }
 
 .image-wrapper {
-    display: flex; /* guarantees stretch height */
+    display: flex;
     border-radius: 10px;
     overflow: hidden;
 }
