@@ -100,6 +100,16 @@
     }
 }
 
+#hideOnScroll {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#hideOnScroll.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
 section {
     width: 80%;
     margin: auto;
