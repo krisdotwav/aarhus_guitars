@@ -100,13 +100,36 @@
         <div class="popup">Kontakt mig her!</div>
     </div>
 
-<div class="hero-pic" style="background-image: url(images/hero_pic.jpg);">
-    <div class="hero-text-box">
-        <img src="images/white_wire_logo.svg">
-        <h1>Kontakt</h1>
+    <div class="hero-pic" style="background-image: url(images/hero_pic.jpg);">
+        <div class="hero-text-box">
+            <img src="images/white_wire_logo.svg">
+            <h1>Kontakt</h1>
+        </div>
     </div>
-</div>
-</div>
+
+    <div id="popup-form-container" style="display:none;">
+        <form id="contact-form" method="POST">
+            <div class="form-row form-error" style="display:none;"></div>
+            <div class="form-row">
+                <label for="contact-form-name">Navn:</label>
+                <input id="contact-form-name" class="form-input" type="text" name="name">
+            </div>
+            <div class="form-row">
+                <label for="contact-form-email">Email:</label>
+                <input id="contact-form-email" class="form-input" type="email" name="email">
+            </div>
+            <div class="form-row">
+                <label for="contact-form-phone">Tlf:</label>
+                <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+            </div>
+            <div class="form-row">
+                <label for="contact-form-message">Skriv din besked her:</label>
+                <textarea id="contact-form-message" class="form-input" name="message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="footer-box">
@@ -267,4 +290,5 @@
     </footer>
 </body>
 <script src="./hamburger.js"></script>
+<script src="./kontakt.js"></script>
 </html>
