@@ -1,0 +1,26 @@
+.contact-content {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+iframe {
+    margin: 0;
+    display: block;
+    width: auto;
+    max-width: 450;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px 0 rgb(30, 30, 30, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+}

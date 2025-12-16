@@ -79,10 +79,20 @@ nav {
     background-color: rgba(100, 100, 100, 0.3);
 }
 
-.contact-popup:hover {
-    .popup {
-        display: block;
-    }
+.contact-popup .popup {
+    display: none; /* hide by default */
+    position: fixed;
+    bottom: 100px; /* adjust above button */
+    right: 0;
+    background-color: #969696;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 100;
+}
+
+.contact-popup:hover .popup {
+    display: block;
 }
 
 footer {
