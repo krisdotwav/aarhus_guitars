@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    line-height: 1.5;
 }
 
 .contact-text-box {
@@ -26,5 +27,9 @@ iframe {
     .contact-content {
         flex-direction: column;
         text-align: center;
+    }
+    iframe {
+        max-width: 90vw;
+        max-height: 90vw;
     }
 }

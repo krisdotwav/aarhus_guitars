@@ -2,6 +2,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+@font-face {
+    font-family: 'Anonymous Pro';
+    src: url(AnonymousPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Safira March Personal Use Only';
+    src: url(Safira\ March\ Personal\ Use\ Only.ttf);
+}
+
 nav a {
     font-family: 'Red Hat Display', sans-serif;
     text-decoration: none;
