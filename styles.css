@@ -79,10 +79,6 @@ nav {
     background-color: rgba(100, 100, 100, 0.3);
 }
 
-{box-sizing: border-box;
-
-}
-
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: #555;
@@ -227,7 +223,7 @@ footer p {
 
 .hero-pic {
     width: 100%;
-    margin-top: 89px;
+    margin-top: 67px;
     height: 200px;
     background-size: cover;
     background-position: center;
