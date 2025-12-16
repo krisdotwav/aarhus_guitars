@@ -83,15 +83,19 @@ nav {
     display: none; /* hide by default */
     position: fixed;
     bottom: 100px; /* adjust above button */
-    right: 0;
-    background-color: #969696;
+    right: 20px;
+    background-color: white;
     padding: 10px 20px;
     border-radius: 10px;
-    color: #fff;
+    color: #1E1E1E;
     z-index: 100;
 }
 
 .contact-popup:hover .popup {
+    display: block;
+}
+
+.contact-popup:not(.form-open):hover .popup {
     display: block;
 }
 
@@ -166,7 +170,7 @@ footer p {
 
 .hero-pic {
     width: 100%;
-    margin-top: 67px;
+    margin-top: 89px;
     height: 200px;
     background-size: cover;
     background-position: center;
