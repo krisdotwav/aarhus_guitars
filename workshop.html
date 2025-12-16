@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <title>Værksted | Aarhus Guitars</title>
+    <title>Projekter | Aarhus Guitars</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="hamburger.css">
@@ -45,7 +45,7 @@
         <div class="nav-box">
             <nav>
                 <a href="priser.html">Priser</a>
-                <a href="workshop.html" style="color: #8C99D9;">Værksted</a>
+                <a href="workshop.html" style="color: #8C99D9;">Projekter</a>
                 <a href="om.html">Om</a>
                 <a href="contact.html">Kontakt</a>
             </nav>
@@ -76,7 +76,7 @@
                 <img src="images/white_wire_logo.svg" alt="Aarhus Guitars logo">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="priser.html">Priser</a></li>
-                <li><a href="workshop.html">Værksted</a></li>
+                <li><a href="workshop.html">Projekter</a></li>
                 <li><a href="om.html">Om</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
@@ -92,19 +92,10 @@
         </nav>
     </header>
 
-    <div class="contact-popup">
-        <div class="popup">Kontakt mig her!</div>
-        <button id="show-popup" class="contact-btn" onclick="openForm()">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M27.5 7.5C27.5 6.125 26.375 5 25 5H5C3.625 5 2.5 6.125 2.5 7.5V22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5ZM25 7.5L15 13.75L5 7.5H25ZM25 22.5H5V10L15 16.25L25 10V22.5Z" fill="#F6F4F1"/>
-            </svg>
-        </button>
-    </div>
-
     <div class="hero-pic" style="background-image: url(images/hero_pic.jpg);">
         <div class="hero-text-box">
             <img src="images/white_wire_logo.svg">
-            <h1>Værksted</h1>
+            <h1>Projekter</h1>
         </div>
     </div>
 
@@ -208,19 +199,30 @@
         </div>
     </section>
 
-    <div class="form-popup" id="myForm">
-        <form class="form-container">
-            <input type="text" placeholder="Emne" name="subject" required>
-            <input type="text" placeholder="Navn" name="name" required>
-            <input type="email" placeholder="Email" name="email" required>
-            <input type="text" placeholder="Telefon" name="phone">
-            <textarea placeholder="Besked" name="message" required></textarea>
+    <div class="contact-popup">
+        <button id="show-popup" class="contact-btn">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.5 7.5C27.5 6.125 26.375 5 25 5H5C3.625 5 2.5 6.125 2.5 7.5V22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5ZM25 7.5L15 13.75L5 7.5H25ZM25 22.5H5V10L15 16.25L25 10V22.5Z" fill="#F6F4F1"/>
+            </svg>
+        </button>
 
-            <div class="btn-box">
-                <button type="button" class="btn cancel" onclick="closeForm()">Luk</button>
-                <button type="submit" class="btn send">Send</button>
-            </div>
-        </form>
+        <!-- Tooltip popup (hover) -->
+        <div class="popup">Kontakt mig her!</div>
+
+        <!-- Form popup (click) -->
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <input type="text" placeholder="Emne *" name="subject" required>
+                <input type="text" placeholder="Navn *" name="name" required>
+                <input type="email" placeholder="Email *" name="email" required>
+                <input type="text" placeholder="Telefon" name="phone">
+                <textarea placeholder="Besked *" name="message" required></textarea>
+                <div class="btn-box">
+                    <button type="submit" class="btn send">Send</button>
+                    <button type="button" class="btn cancel" onclick="toggleForm()">Annuller</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <footer>
