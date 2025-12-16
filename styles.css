@@ -239,7 +239,8 @@ footer p {
     }
 
     .hero-pic {
-        font-size: 16pt;
+        height: 160px;
+        font-size: 14pt;
     }
 
     .hero-text-box img {
