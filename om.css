@@ -1,7 +1,11 @@
+body {
+    background-color: black;
+}
+
 .hero2 {
     display: flex;
     width: 100%;
-    padding: 100px 10%;
+    padding: 210px 10% 210px 10%;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -37,6 +41,9 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    .hero2 {
+        padding: 100px 10% 100px 10%;
+    }
     .hero2-text-box h2 {
         max-width: 70%;
     }
@@ -46,6 +53,9 @@
 }
 
 @media (max-width: 768px) {
+    .hero2 {
+        padding: 100px 10% 100px 10%;
+    }
     .hero2-text-box {
         display: flex;
         flex-direction: column;
