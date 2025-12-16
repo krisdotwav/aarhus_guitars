@@ -1,3 +1,9 @@
+/*
+ * Global Stylesheet
+ * Denne fil indeholder globale stilarter for webapplikationen.
+ * Det inkluderer stilarter for header, footer, og generelle elementer.
+ */
+
 * {
     margin: 0;
     padding: 0;
@@ -265,11 +271,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    header nav {
-        display: none;
-    }
-
-    header .socials-box {
+    header .nav-box, .socials-box {
         display: none;
     }
 
