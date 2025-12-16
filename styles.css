@@ -79,11 +79,12 @@ nav {
     background-color: rgba(100, 100, 100, 0.3);
 }
 
-.contact-popup .popup {
+/* Tooltip default */
+.popup {
     display: none; /* hide by default */
     position: fixed;
     bottom: 100px; /* adjust above button */
-    right: 20px;
+    right: 30px;
     background-color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -91,8 +92,18 @@ nav {
     z-index: 100;
 }
 
-.contact-popup:hover .popup {
+/* Tooltip on hover */
+.contact-popup:not(.form-open):hover .popup {
     display: block;
+}
+
+/* Form popup */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    z-index: 200;
 }
 
 .contact-popup:not(.form-open):hover .popup {
