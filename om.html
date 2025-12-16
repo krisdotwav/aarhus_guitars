@@ -119,20 +119,18 @@
         </div>
     </div>
 
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Login</h1>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <input type="text" placeholder="Emne" name="subject" required>
+            <input type="text" placeholder="Navn" name="name" required>
+            <input type="text" placeholder="Email" name="email" required>
+            <input type="text" placeholder="Telefon" name="phone">
+            <input type="text" placeholder="Besked" name="message" required style="height: 100px;">
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
+            <button type="submit" class="btn-send">Send</button>
+            <button type="button" class="btn-cancel" onclick="closeForm()">Luk</button>
+        </form>
+    </div>
 
     <footer>
         <div class="footer-content">
