@@ -8,6 +8,10 @@
     gap: 30px;
 }
 
+.contact-text-box {
+    max-width: 500px;
+}
+
 iframe {
     margin: 0;
     display: block;
@@ -21,5 +25,6 @@ iframe {
 @media (max-width: 768px) {
     .contact-content {
         flex-direction: column;
+        text-align: center;
     }
 }

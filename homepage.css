@@ -54,10 +54,10 @@
     font-family: 'Red Hat Display', sans-serif;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 1000px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid #FFFFFF30;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     color: #F6F4F1;
     padding: 10px 20px;
     font-size: 1rem;
