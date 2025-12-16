@@ -97,11 +97,11 @@
 
 @media (max-width: 768px) {
     .form-popup {
-        right: 10%;
-        bottom: 110px;
+        right: 15%;
+        bottom: 100px;
     }
 
     .form-container {
-        width: 80vw;
+        width: 70vw;
     }
 }
