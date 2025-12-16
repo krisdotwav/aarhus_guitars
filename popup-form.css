@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 80px;
     right: 80px;
-    z-index: 9;
+    z-index: 20;
 }
 
 /* Add styles to the form container */
@@ -11,13 +11,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 300px;
+    width: 400px;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 35px;
     background-color: rgba(190, 190, 190, 0.5);
     backdrop-filter: blur(40px);
     border: solid 1px #ffffff60;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    box-shadow: 0 10px 30px 0 rgb(30, 30, 30, 0.1);
 }
 
 .form-container input[type="text"],
@@ -25,27 +25,28 @@
 .form-container textarea {
     font-family: 'Red Hat Display', sans-serif;
     letter-spacing: 0.2px;
+    font-size: 11pt;
     width: 100%;
     padding: 15px;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     background: rgba(255, 255, 255, 0.3);
     color: #1e1e1e;
 }
 
 .form-container input::placeholder,
 .form-container textarea::placeholder {
-    color: #1E1E1E66;
+    color: rgba(30, 30, 30, 0.5);
 }
 
 .form-container input[type="text"],
 .form-container input[type="email"] {
-    height: 40px;
+    height: 50px;
 }
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, textarea:focus, input[type=email]:focus {
-    background-color: #ddd;
+    background-color: #F6F4F180;
     color: #1e1e1e;
     outline: none;
 }
@@ -74,8 +75,10 @@
     font-family: 'Red Hat Display', sans-serif;
     background-color: rgba(246, 244, 241, 0.8);
     color: #1e1e1e;
-    height: 40px;
-    border-radius: 20px;
+    font-size: 11pt;
+    letter-spacing: 0.2px;
+    height: 50px;
+    border-radius: 25px;
     border: none;
     cursor: pointer;
     width: 50%;
