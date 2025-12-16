@@ -14,9 +14,10 @@
     width: 300px;
     padding: 10px;
     border-radius: 30px;
-    background-color: rgba(180, 180, 180, 0.7);
-    backdrop-filter: blur(20px);
-    border: solid 1px #ffffff40;
+    background-color: rgba(190, 190, 190, 0.5);
+    backdrop-filter: blur(40px);
+    border: solid 1px #ffffff60;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
 }
 
 .form-container input[type="text"],
@@ -28,23 +29,13 @@
     padding: 15px;
     border: none;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    color: #F6F4F1;
+    background: rgba(255, 255, 255, 0.3);
+    color: #1e1e1e;
 }
 
 .form-container input::placeholder,
 .form-container textarea::placeholder {
-    color: rgba(0, 0, 0, 0.2);
-}
-
-/* Full-width input fields */
-.form-container input[type=text], textarea, input[type=email] {
-    font-family: 'Red Hat Display', sans-serif;
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    color: #1E1E1E66;
 }
 
 .form-container input[type="text"],
@@ -55,7 +46,7 @@
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, textarea:focus, input[type=email]:focus {
     background-color: #ddd;
-    color: black;
+    color: #1e1e1e;
     outline: none;
 }
 
@@ -81,7 +72,7 @@
 /* Set a style for the submit/login button */
 .form-container .btn, .send {
     font-family: 'Red Hat Display', sans-serif;
-    background-color: rgb(246, 244, 241, 0.8);
+    background-color: rgba(246, 244, 241, 0.8);
     color: #1e1e1e;
     height: 40px;
     border-radius: 20px;
