@@ -293,3 +293,9 @@ footer p {
         gap: 60px;
     }
 }
+
+@media (min-width: 769px) {
+    header .ham-menu {
+        display: none;
+    }
+}
