@@ -76,9 +76,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
-    animation: floatUpDown 2s linear infinite;
+    width: auto;
+    height: auto;
+    animation: floatUpDown 2s ease-in-out infinite;
     z-index: 1;
     opacity: 60%;
 }
@@ -93,7 +93,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(10px);
+        transform: translateY(-10px);
     }
     100% {
         transform: translateY(0);
