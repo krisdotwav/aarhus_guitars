@@ -94,3 +94,14 @@
 .form-container .btn:hover{
     opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+    .form-popup {
+        right: 10%;
+        bottom: 110px;
+    }
+
+    .form-container {
+        width: 80vw;
+    }
+}
