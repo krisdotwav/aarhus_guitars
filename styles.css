@@ -79,10 +79,24 @@ nav {
     background-color: rgba(100, 100, 100, 0.3);
 }
 
-.contact-popup:hover {
-    .popup {
-        display: block;
-    }
+.contact-popup .popup {
+    display: none; /* hide by default */
+    position: fixed;
+    bottom: 100px; /* adjust above button */
+    right: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #1E1E1E;
+    z-index: 100;
+}
+
+.contact-popup:hover .popup {
+    display: block;
+}
+
+.contact-popup:not(.form-open):hover .popup {
+    display: block;
 }
 
 footer {
@@ -156,7 +170,7 @@ footer p {
 
 .hero-pic {
     width: 100%;
-    margin-top: 67px;
+    margin-top: 89px;
     height: 200px;
     background-size: cover;
     background-position: center;

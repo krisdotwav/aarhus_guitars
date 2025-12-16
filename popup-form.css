@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 80px;
     right: 80px;
-    z-index: 20;
+    z-index: 200;
 }
 
 /* Add styles to the form container */
