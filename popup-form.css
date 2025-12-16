@@ -14,9 +14,9 @@
     width: 400px;
     padding: 10px;
     border-radius: 35px;
-    background-color: rgba(30, 30, 30, 0.3);
+    background-color: rgba(30, 30, 30, 0.4);
     backdrop-filter: blur(40px);
-    border: solid 1px #FFFFFF40;
+    border: solid 1px #FFFFFF30;
     box-shadow: 0 10px 30px 0 rgb(30, 30, 30, 0.1);
 }
 
@@ -27,16 +27,16 @@
     letter-spacing: 0.2px;
     font-size: 11pt;
     width: 100%;
-    padding: 15px;
-    border: #FFFFFF40 solid 1px;
+    padding: 20px;
+    border: #FFFFFF30 solid 1px;
     border-radius: 25px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
     color: #1e1e1e;
 }
 
 .form-container input::placeholder,
 .form-container textarea::placeholder {
-    color: rgba(30, 30, 30, 0.5);
+    color: #F6F4F1;
 }
 
 .form-container input[type="text"],
@@ -46,7 +46,7 @@
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, textarea:focus, input[type=email]:focus {
-    background-color: #F6F4F180;
+    background-color: #FFFFFF80;
     color: #1e1e1e;
     outline: none;
 }
@@ -95,13 +95,8 @@
     opacity: 0.8;
 }
 
-@media (max-width: 768px) {
-    .form-popup {
-        right: 15%;
-        bottom: 100px;
-    }
-
+@media (max-width: 550px) {
     .form-container {
-        width: 70vw;
+        width: calc(100vw - 60px);
     }
 }
