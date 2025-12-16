@@ -46,7 +46,7 @@
         <div class="nav-box">
             <nav>
                 <a href="priser.html">Priser</a>
-                <a href="workshop.html">Værksted</a>
+                <a href="workshop.html">Projekter</a>
                 <a href="om.html">Om</a>
                 <a href="contact.html">Kontakt</a>
             </nav>
@@ -77,7 +77,7 @@
                 <img src="images/white_wire_logo.svg" alt="Aarhus Guitars logo">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="priser.html">Priser</a></li>
-                <li><a href="workshop.html">Værksted</a></li>
+                <li><a href="workshop.html">Projekter</a></li>
                 <li><a href="om.html">Om</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
@@ -93,15 +93,6 @@
         </nav>
     </header>
 
-    <div class="contact-popup">
-        <button id="show-popup" class="contact-btn" onclick="toggleForm()">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M27.5 7.5C27.5 6.125 26.375 5 25 5H5C3.625 5 2.5 6.125 2.5 7.5V22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5ZM25 7.5L15 13.75L5 7.5H25ZM25 22.5H5V10L15 16.25L25 10V22.5Z" fill="#F6F4F1"/>
-            </svg>
-        </button>
-        <div class="popup">Kontakt mig her!</div>
-    </div>
-    
     <div class="hero">
         <video src="AG Hero Video V1.mp4" type="video/mp4" autoplay muted playsinline loop></video>
         <div class="hero-text">
@@ -115,7 +106,7 @@
             </div>
         </div>
     </div>
-    
+
     <section>
         <h3>Dit lokale guitarværksted i Aarhus 🎸</h3>
         <p>
@@ -129,19 +120,30 @@
         <div class="elfsight-app-b91f9785-2370-4020-a606-30c8c68bd6e0" data-elfsight-app-lazy></div>
     </section>
 
-    <div class="form-popup" id="myForm">
-        <form class="form-container">
-            <input type="text" placeholder="Emne" name="subject" required>
-            <input type="text" placeholder="Navn" name="name" required>
-            <input type="email" placeholder="Email" name="email" required>
-            <input type="text" placeholder="Telefon" name="phone">
-            <textarea placeholder="Besked" name="message" required></textarea>
+    <div class="contact-popup">
+        <button id="show-popup" class="contact-btn">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.5 7.5C27.5 6.125 26.375 5 25 5H5C3.625 5 2.5 6.125 2.5 7.5V22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5ZM25 7.5L15 13.75L5 7.5H25ZM25 22.5H5V10L15 16.25L25 10V22.5Z" fill="#F6F4F1"/>
+            </svg>
+        </button>
 
-            <div class="btn-box">
-                <button type="button" class="btn cancel" onclick="toggleForm()">Luk</button>
-                <button type="submit" class="btn send">Send</button>
-            </div>
-        </form>
+        <!-- Tooltip popup (hover) -->
+        <div class="popup">Kontakt mig her!</div>
+
+        <!-- Form popup (click) -->
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <input type="text" placeholder="Emne *" name="subject" required>
+                <input type="text" placeholder="Navn *" name="name" required>
+                <input type="email" placeholder="Email *" name="email" required>
+                <input type="text" placeholder="Telefon" name="phone">
+                <textarea placeholder="Besked *" name="message" required></textarea>
+                <div class="btn-box">
+                    <button type="submit" class="btn send">Send</button>
+                    <button type="button" class="btn cancel" onclick="toggleForm()">Annuller</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <footer>
