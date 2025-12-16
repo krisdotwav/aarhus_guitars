@@ -1,7 +1,7 @@
 .hero2 {
     display: flex;
     width: 100%;
-    padding: 100px 20%;
+    padding: 100px 10%;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -12,25 +12,51 @@
     font-size: 20pt;
 }
 
-.hero2-text-box h2 {
+.hero2-text-box {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    gap: 40px;
+    align-items: flex-start;
+    text-align: flex-start;
+}
+
+.hero2-text-box h2 {
+    margin: 0;
+    max-width: 60%;
     color: #F6F4F1;
     font-size: 26pt;
     margin-bottom: 20px;
 }
 
 .hero2-text-box p {
+    margin: 0;
+    max-width: 60%;
     text-align: justify;
-    width: 50%;
     font-size: 12pt;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #F6F4F1;
-    max-width: 1200px;
 }
 
-.hero2-text-box img {
-    height: 80px;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero2-text-box h2 {
+        max-width: 70%;
+    }
+    .hero2-text-box p {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero2-text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .hero2-text-box h2 {
+        max-width: 90%;
+    }
+
+    .hero2-text-box p {
+        max-width: 90%;
+    }
 }
