@@ -245,6 +245,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    
     header .nav-box, .socials-box {
         display: none;
     }
@@ -266,6 +267,10 @@ footer p {
     .footer-content {
         flex-direction: column;
         gap: 60px;
+    }
+
+    .footer-content .socials-box {
+        display: flex;
     }
 }
 
